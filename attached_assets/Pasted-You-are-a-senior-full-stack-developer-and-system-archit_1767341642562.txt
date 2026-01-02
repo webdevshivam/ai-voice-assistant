@@ -1,0 +1,53 @@
+You are a senior full-stack developer and system architect.
+
+I want you to design and help me build a real-time Hindi AI Voice Assistant using the MERN stack.
+
+### Tech Stack
+- Frontend: React (Vite)
+- Backend: Node.js + Express.js
+- Real-time communication: Socket.IO
+- Speech-to-Text: Web Speech API (Hindi – hi-IN)
+- Text-to-Speech: Web Speech API (Hindi)
+- Database: MongoDB (for logs, conversations, leads)
+- Deployment: Frontend on Netlify, Backend on cloud server
+
+### Core Functionality
+1. The user can click a microphone button and speak in Hindi.
+2. The app should listen in real time and convert speech to Hindi text.
+3. The recognized text should be sent to the backend instantly using WebSockets.
+4. The backend should act as the “brain”:
+   - Understand the user intent.
+   - Use a system prompt (example: “Act as a Hindi sales agent”).
+   - Generate a Hindi response.
+5. The backend should send the response text back to the frontend in real time.
+6. The frontend should convert the response text into natural Hindi speech.
+7. The assistant should pause listening while speaking and resume listening after speech ends.
+8. The conversation should feel smooth, real-time, and natural.
+
+### Prompt Control
+- The user should be able to define a custom system prompt like:
+  “Act as a telecaller and sell a pen.”
+- This prompt should control the behavior of the AI for the entire session.
+
+### Call Automation (Future Scope)
+- The system should support calling phone numbers automatically.
+- The AI should talk to the person on the call in Hindi.
+- The conversation should be recorded, transcribed, and summarized.
+
+### Data Storage
+Store the following in MongoDB:
+- User speech text
+- AI responses
+- Conversation timestamps
+- Call summaries
+- Lead status (interested / not interested)
+
+### What I Want From You
+1. Design the complete system architecture.
+2. Suggest a clean folder structure for frontend and backend.
+3. Explain the real-time data flow step by step.
+4. Provide scalable code structure (not just snippets).
+5. Mention performance, latency, and echo-handling strategies.
+6. Suggest how this system can be extended into a SaaS product.
+
+Explain everything clearly, step by step, in simple English.
